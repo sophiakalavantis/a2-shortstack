@@ -1,8 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
+  "name": "To-Do List",
+  "version": "1.0.0",
+  "description": "Simple to-do list app",
+  "author": "Sophia Kalavantis",
   "scripts": {
     "start": "node server.js"
   },
