@@ -1,0 +1,137 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #58a6ff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+#task-input {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #30363d;
+  background-color: #161b22;
+  color: #c9d1d9;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+#priority-input {
+  padding: 12px;
+  border: 1px solid #30363d;
+  background-color: #161b22;
+  color: #c9d1d9;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #161b22;
+  color: #58a6ff;
+  border: 1px solid #30363d;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+  border-color: #58a6ff;
+}
+
+#add-task {
+  background-color: #2ea043;
+  color: white;
+}
+
+#add-task:hover {
+  background-color: #238636;
+}
+
+#clear-list {
+  background-color: #da3633;
+  color: white;
+}
+
+#clear-list:hover {
+  background-color: #a40e10;
+}
+
+#task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.task-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.task-card h3 {
+  font-size: 1.5rem;
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+.task-card .priority {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
+
+.priority.low {
+  background-color: #2ea043;
+}
+
+.priority.medium {
+  background-color: #d29922;
+}
+
+.priority.high {
+  background-color: #da3633;
+}
+
+.task-card .dates {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-top: 10px;
+  display: block;
+}
